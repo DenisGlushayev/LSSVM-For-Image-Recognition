@@ -210,7 +210,7 @@ class LSSVC_OPT():
                 f"Model type '{model_json['type']}' doesn't match 'LSSVC'"
             )
 
-        lssvc = LSSVC(
+        lssvc = LSSVC_OPT(
             gamma = model_json['hyperparameters']['gamma'],
             kernel = model_json['hyperparameters']['kernel'],
             **model_json['hyperparameters']['kernel_params']
